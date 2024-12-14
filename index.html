@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Completa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Menú lateral -->
+<nav class="menu-lateral">
+    <ul>
+        <li>
+            <a href="#nuevas-tec">Nuevas Tec</a>
+            <ul class="submenu">
+                <li><a href="NUEVAS TEC/iot.html">IoT</a></li>
+                <li><a href="NUEVAS TEC/ia-generativa.html">IA Generativa</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#devops">DevOps</a>
+            <ul class="submenu">
+                <li><a href="DEVOPS/Desarrollo colaborativo.html">Desarrollo Colaborativo (SCM)</a></li>
+                <li><a href="DEVOPS/Revisión-codigo.html">Revisión código (Calidad y Seguridad)</a></li>
+                <li><a href="#secrets">Revisión Secretos de Código</a></li>
+                <li><a href="#iac">IaC</a></li>
+                <li><a href="#ci">Integración Continua (CI)</a></li>
+                <li><a href="#cd">Despliegue Continuo (CD)</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#frontend">Front-End</a>
+            <ul class="submenu">
+                <a href="FRONT-END/Arquetipo-Front.html">Arquetipo Front (Acelerador)</a>
+                <li><a href="#spa-pwa">Arquitectura Web (SPA / PWA)</a></li>
+                <li><a href="#mobile">Mobile Nativo / Híbrido</a></li>
+                <li><a href="#cms">Portal CMS</a></li>
+                <li><a href="#seo">SEO</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
+                <li><a href="#ivr">IVR</a></li>
+                <li><a href="#lineamientos-front">Lineamientos Front</a></li>
+                <li><a href="FRONT-END/Wiki-Evol.html">Wiki Evol</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#procesos">Procesos</a>
+            <ul class="submenu">
+                <li><a href="PROCESOS/RPA.html">RPA</a></li>
+                <li><a href="PROCESOS/BPM.html">BPM</a></li>
+                <li><a href="#brms">BRMS</a></li>
+                <li><a href="#ecm">ECM</a></li>
+                <li><a href="#firma-digital">Firma Digital/Electr/KYC (Biométrica)</a></li>
+                <li><a href="#pasarela-pago">Pasarela Pago</a></li>
+                <li><a href="#email-marketing">Email Marketing</a></li>
+                <li><a href="#push-notification">Push Notification</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#integracion">Integración</a>
+            <ul class="submenu">
+                <li><a href="INTEGRACION/API-First.html">API First</a></li>
+                <li><a href="INTEGRACION/Arquetipo.html">Arquetipo API / EDA (Acelerador)</a></li>
+                <li><a href="#gobierno-apis">Gobierno APIs</a></li>
+                <li><a href="#eda">EDA</a></li>
+                <li><a href="#batch">Batch</a></li>
+                <li><a href="#esb">ESB</a></li>
+                <li><a href="#lineamientos-apis">Lineamientos APIs</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#backend">Back-End</a>
+            <ul class="submenu">
+                <li><a href="BACK-END/Arquetipo-Back.html">Arquetipo Back (Acelerador)</a></li>
+                <li><a href="BACK-END/Patrones-Diseño.html">Patrones de Diseño Arquitectura</a></li>
+                <li><a href="#arquitectura-microservicios">Arquitectura Microservicios</a></li>
+                <li><a href="#arquitectura-monolitica">Arquitectura Monolítica / N-Capas</a></li>
+                <li><a href="#principios-diseno">Principios de Diseño Software</a></li>
+                <li><a href="#pruebas-performance">Pruebas de Performance</a></li>
+                <li><a href="#pruebas-automatizadas">Pruebas Automatizadas</a></li>
+                <li><a href="#lineamientos-backend">Lineamientos Backend</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#infraestructura">Infraestructura</a>
+            <ul class="submenu">
+                <li>
+                    <a href="#on-premise">On-Premise</a>
+                    <ul class="submenu">
+                        <li><a href="INFRAESTRUCTURA/ON-PREMISE/Virtualizaciones.html">Virtualizaciones</a></li>
+                        <li><a href="INFRAESTRUCTURA/ON-PREMISE/Contenedores.html">Contenedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cloud">Cloud</a>
+                    <ul class="submenu">
+                        <li><a href="INFRAESTRUCTURA/CLOUD/Arquitectura-Serverless.html">Arquitectura Serverless</a></li>
+                        <li><a href="INFRAESTRUCTURA/CLOUD/Arquitectura-Ref-Nubes.html">Arquitectura Ref. Nubes Privadas</a></li>
+                        <li><a href="#tipos-migracion">Tipos de Migración Cloud</a></li>
+                        <li><a href="#optimizacion-costos">Optimización de Costos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#monitoreo">Monitoreo</a>
+            <ul class="submenu">
+                <li><a href="MONITOREO/APM.html">APM</a></li>
+                <li><a href="MONITOREO/Logging-Distribuido.html">Logging Distribuido</a></li>
+                <li><a href="#telemetria">Telemetría</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#datos-analitica">Datos y Analítica</a>
+            <ul class="submenu">
+                <li><a href="DATOS-ANALITICA/Base-Datos-Transaccional.html">Base de Datos Transaccional</a></li>
+                <li><a href="DATOS-ANALITICA/Base-Datos-NOSQL.html">Base de Datos NoSQL</a></li>
+                <li><a href="#gestion-cache">Gestión de Caché</a></li>
+                <li><a href="#mdm-ods">MDM / ODS</a></li>
+                <li><a href="#datalake">Datalake</a></li>
+                <li><a href="#big-data">Big Data</a></li>
+                <li><a href="#lineamientos-bd">Lineamientos BD Transac y Caché</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#seguridad">Seguridad</a>
+            <ul class="submenu">
+                <li><a href="SEGURIDAD/Autenticacion-Autorizacion.html">Autenticación / Autorización</a></li>
+                <li><a href="SEGURIDAD/IAM.html">IAM</a></li>
+                <li><a href="#programacion-segura">Programación Segura</a></li>
+                <li><a href="#iso-27001">ISO 27001</a></li>
+                <li><a href="#sast-dast">SAST / DAST</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+
+    <header>
+        <h1>Arquitectura </h1>
+    </header>
+    <main class="grid-layout">
+        <!-- IZQUIERDA: Nuevas Tec y DevOps -->
+        <main class="grid-layout">
+            <!-- IZQUIERDA: Nuevas Tec -->
+            <div class="side-left" id="nuevas-tec">
+                <section>
+                    <h2>NUEVAS TEC</h2>
+                    <div class="box">
+                        <a href="NUEVAS TEC/iot.html" class="box-link">IoT</a>
+                    </div>
+                    <div class="box">
+                        <a href="NUEVAS TEC/ia-generativa.html" class="box-link">IA Generativa</a>
+                    </div>
+                </section>
+                <section id="devops">
+                    <h2>DEVOPS</h2>
+                    <div class="box">
+                        <a href="DEVOPS/Desarrollo colaborativo.html" class="box-link">Desarrollo Colaborativo (SCM)</a>
+                    </div>
+                    <div class="box">
+                        <a href="DEVOPS/Revisión-codigo.html" class="box-link">Revisión Código (Calidad y Seguridad)</a>
+                    </div>
+                    <div class="box">Revisión Secretos de Código (Seguridad)</div>
+                    <div class="box">IaC</div>
+                    <div class="box">Integración Continua (CI)</div>
+                    <div class="box">Despliegue Continuo (CD)</div>
+                </section>
+            </div>
+        </div>
+        
+        </div>
+           
+        </div>
+
+        <!-- CENTRO: Front-End, Procesos, Integración, Back-End, Infraestructura y Monitoreo -->
+        <div class="center">
+            <section id="frontend">
+                <h2>FRONT-END</h2>
+                <div class="section-content">
+                    <div class="box">
+                        <a href="FRONT-END/Arquetipo-Front.html" class="box-link">Arquetipo Front (Acelerador)</a>
+                    </div>
+                    <div class="box">Arquitectura Web (SPA / PWA)</div>
+                    <div class="box">Mobile Nativo / Híbrido</div>
+                    <div class="box">Portal CMS</div>
+                    <div class="box">SEO</div>
+                    <div class="box">Chatbot</div>
+                    <div class="box">IVR</div>
+                    <div class="box">Lineamientos Front</div>
+                    <div class="box">
+                        <a href="FRONT-END/Wiki-Evol.html" class="box-link">Wiki Evol</a>
+                    </div>
+                    
+                </div>
+            </section>
+            <br>
+            <section id="procesos">
+                <h2>PROCESOS</h2>
+                <div class="section-content">
+                    <div class="box">
+                        <a href="PROCESOS/RPA.html" class="box-link">RPA</a>
+                    </div>
+                    <div class="box">
+                        <a href="PROCESOS/BPM.html" class="box-link">BPM</a>
+                    </div>
+                    <div class="box">BRMS</div>
+                    <div class="box">ECM</div>
+                    <div class="box">Firma Digital/Electr/KYC (Biométrica)</div>
+                    <div class="box">Pasarela Pago</div>
+
+
+                </div>
+
+                <div class="section2">
+                        <div class="box2">Email Marketing</div>
+                        <div class="box2">Push Notification</div>                       
+                </div>
+
+            </section>
+            <section id="integracion">
+                <h2>INTEGRACIÓN</h2>
+                <div class="section-content">
+                    <div class="box">
+                        <a href="INTEGRACION/API-First.html" class="box-link">API First</a>
+                    </div>
+                    <div class="box">
+                        <a href="INTEGRACION/Arquetipo.html" class="box-link">Arquetipo API / EDA (Acelerador)</a>
+                    </div>
+                    <div class="box">Gobierno APIs</div>
+                    <div class="box">EDA</div>
+                    <div class="box">Batch</div>
+                    <div class="box">ESB</div>
+                    
+                </div>
+                <div class="section3">
+                    <div class="box3">Lineamientos APIs</div>                       
+                </div>
+            </section>
+            <section id="backend">
+                <h2>BACK-END</h2>
+                <div class="section-content">
+                    <div class="box">
+                        <a href="BACK-END/Arquetipo-Back.html" class="box-link">Arquetipo Back (Acelerador)</a>
+                    </div>
+                    <div class="box">
+                        <a href="BACK-END/Patrones-Diseño.html" class="box-link">Patrones de Diseño Arquitectura</a>
+                    </div>
+                    <div class="box">Arquitectura Microservicios</div>
+                    <div class="box">Arquitectura Monolítica / N-Capas</div>
+                    <div class="box">Principios de Diseño Software</div>
+                    <div class="box">Pruebas de Performance</div>
+
+                </div>
+                <div class="section2">
+                    <div class="box2">Pruebas Automatizadas</div>
+                    <div class="box2">Lineamientos Backend</div>                    
+                </div>
+            </section>
+            <section id="infraestructura">
+                <h2>INFRAESTRUCTURA</h2>
+                <div class="infrastructure">
+                    <div class="subsection">
+                        <h3>ON-PREMISE</h3>
+                        <div class="box">
+                            <a href="INFRAESTRUCTURA/ON-PREMISE/Virtualizaciones.html" class="box-link">Virtualizaciones</a>
+                        </div>
+                        <div class="box">
+                            <a href="INFRAESTRUCTURA/ON-PREMISE/Contenedores.html" class="box-link">Contenedores</a>
+                        </div>
+                    </div>
+                    <div class="subsection">
+                        <h3>CLOUD</h3>
+                        <div class="box">
+                            <a href="INFRAESTRUCTURA/CLOUD/Arquitectura-Serverless.html" class="box-link">Arquitectura Serverless</a>
+                        </div>
+                        <div class="box">
+                            <a href="INFRAESTRUCTURA/CLOUD/Arquitectura-Ref-Nubes.html" class="box-link">Arquitectura Ref. Nubes Privadas</a>
+                        </div>
+                        <div class="box">Tipos de Migración Cloud</div>
+                        <div class="box">Optimización de Costos</div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <section id="monitoreo">
+                <h2>MONITOREO</h2>
+                <div class="section-content">
+                    <div class="box">
+                        <a href="MONITOREO/APM.html" class="box-link">APM</a>
+                    </div>
+                    <div class="box">
+                        <a href="MONITOREO/Logging-Distribuido.html" class="box-link">Logging Distribuido</a>
+                    </div>
+                    <div class="box">Telemetría</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- DERECHA: Datos y Analítica Empresarial y Seguridad -->
+        <div class="side-right">
+            <section id="datos-analitica">
+                <h2>DATOS Y ANALÍTICA EMPRESARIAL</h2>
+                <div class="box">
+                    <a href="DATOS-ANALITICA/Base-Datos-Transaccional.html" class="box-link">Base de Datos Transaccional</a>
+                </div>
+                <div class="box">
+                    <a href="DATOS-ANALITICA/Base-Datos-NOSQL.html" class="box-link">Base de Datos NoSQL</a>
+                </div>
+                <div class="box">Gestión de Caché</div>
+                <div class="box">MDM / ODS</div>
+                <div class="box">Datalake</div>
+                <div class="box">Big Data</div>
+                <div class="box">Lineamientos BD Transac y Caché</div>
+            </section>
+            <section id="seguridad">
+                <h2>SEGURIDAD</h2>
+                <div class="box">
+                    <a href="SEGURIDAD/Autenticacion-Autorizacion.html" class="box-link">Autenticación / Autorización</a>
+                </div>
+                <div class="box">
+                    <a href="SEGURIDAD/IAM.html" class="box-link">IAM</a>
+                </div>
+                <div class="box">Programación Segura</div>
+                <div class="box">ISO 27001</div>
+                <div class="box">SAST / DAST</div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
